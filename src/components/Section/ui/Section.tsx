@@ -1,13 +1,15 @@
 import { classNames } from '@/utils/classNames/classNames';
 import cls from './Section.module.css';
+import { Ref, forwardRef } from 'react';
 
 interface ISectionData {
   className?: string;
+  ref: Ref<HTMLDivElement>;
 }
 
-export const Section = ({ className }: ISectionData) => {
+export const Section = forwardRef<HTMLDivElement, ISectionData>(({ className }, ref) => {
   return (
-    <div className={classNames(cls.section, {}, [className || ''])}>
+    <div ref={ref} className={classNames(cls.section, {}, [className || ''])}>
       <div className={classNames(cls.container, {}, [])}>
        <ul className={classNames(cls.list, {}, [])}>
         <li className={classNames(cls.item, {}, [])}>
@@ -43,4 +45,4 @@ export const Section = ({ className }: ISectionData) => {
       </div>
     </div>
   );
-};
+});

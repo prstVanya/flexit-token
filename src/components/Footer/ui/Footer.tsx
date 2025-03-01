@@ -11,14 +11,17 @@ export const Footer = ({ className }: IFooterData) => {
       <div className={classNames(cls.container, {}, [])}>
         <div className={classNames(cls.icons, {}, [])}>
           <a 
+            target='_blank'
             className={classNames(cls.svg, {}, [cls.twitter])}
             href='#'  
           ></a>
           <a
+            target='_blank'
             className={classNames(cls.svg, {}, [cls.youtube])}
             href='#'
           ></a>
           <a 
+            target='_blank'
             className={classNames(cls.svg, {}, [cls.telegram])}
             href='#'  
           ></a>

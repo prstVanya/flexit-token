@@ -1,0 +1,104 @@
+.section {
+  width: 100%;
+  min-height: 72vh;
+  position: relative;
+  margin: 0;
+  background: linear-gradient(to bottom, #2F4F4F 0%, #4F6F6F 90%);
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.info {
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto 0;
+  text-align: start;
+  background-color: #5a7f7f;
+  padding: 18px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.about {
+  font-size: 36px;
+  font-family: var(--font-code-light);
+  margin: 0;
+  position: relative;
+  top: -40px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: var(--font-code-light);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.te {
+  font-size: 24px;
+  font-family: var(--font-inter-medium);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.blum {
+  background-image: url('../../../assets/images/icons/bloom.svg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.blum:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 638px) {
+  .info {
+    width: 80%;
+  }
+  
+  .about {
+    font-size: 27px;
+    top: -35px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .about {
+    font-size: 27px;
+    top: -35px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
