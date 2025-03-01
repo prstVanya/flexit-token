@@ -1,0 +1,9 @@
+@import url('../fonts/fonts.css');
+
+:root {
+  --background-dark: black;
+  --color-ligth: white;
+  --font-code-light: 'Source-code-light', "Arial", sans-serif;
+  --font-inter-medium: 'Inter-medium', "Arial", sans-serif;
+  --font-inter-bold: 'Inter-bold',"Arial", sans-serif;
+}
