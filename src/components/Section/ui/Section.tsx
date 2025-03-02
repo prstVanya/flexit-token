@@ -9,7 +9,7 @@ interface ISectionData {
 
 export const Section = forwardRef<HTMLDivElement, ISectionData>(({ className }, ref) => {
   return (
-    <div ref={ref} className={classNames(cls.section, {}, [className || ''])}>
+    <section ref={ref} className={classNames(cls.section, {}, [className || ''])}>
       <div className={classNames(cls.container, {}, [])}>
        <ul className={classNames(cls.list, {}, [])}>
         <li className={classNames(cls.item, {}, [])}>
@@ -43,6 +43,6 @@ export const Section = forwardRef<HTMLDivElement, ISectionData>(({ className }, 
         </li>
        </ul>
       </div>
-    </div>
+    </section>
   );
 });

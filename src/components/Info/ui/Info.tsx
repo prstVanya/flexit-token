@@ -9,7 +9,7 @@ interface IInfoData {
 
 export const Info = forwardRef<HTMLDivElement, IInfoData>(({ className }, ref) => {
   return (
-    <div ref={ref} className={classNames(cls.section, {}, [className || ''])}>
+    <section ref={ref} className={classNames(cls.section, {}, [className || ''])}>
       <div className={classNames(cls.container, {}, [])}>
         <div className={classNames(cls.info, {}, [])}>
           <h2 className={classNames(cls.about, {}, [])}>
@@ -27,6 +27,6 @@ export const Info = forwardRef<HTMLDivElement, IInfoData>(({ className }, ref) =
           <a className={classNames(cls.blum, {}, [])}></a>
         </div>
       </div>
-    </div>
+    </section>
   );
 });

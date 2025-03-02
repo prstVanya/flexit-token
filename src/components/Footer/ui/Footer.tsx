@@ -7,13 +7,13 @@ interface IFooterData {
 
 export const Footer = ({ className }: IFooterData) => {
   return (
-    <div className={classNames(cls.section, {}, [className || ''])}>
+    <footer className={classNames(cls.section, {}, [className || ''])}>
       <div className={classNames(cls.container, {}, [])}>
         <div className={classNames(cls.icons, {}, [])}>
           <a 
             target='_blank'
             className={classNames(cls.svg, {}, [cls.twitter])}
-            href='#'  
+            href='https://x.com/flexittoken'
           ></a>
           <a
             target='_blank'
@@ -23,10 +23,10 @@ export const Footer = ({ className }: IFooterData) => {
           <a 
             target='_blank'
             className={classNames(cls.svg, {}, [cls.telegram])}
-            href='#'  
+            href='https://t.me/+k-PtchtSzONhOTM6'  
           ></a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

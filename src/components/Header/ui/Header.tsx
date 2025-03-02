@@ -13,7 +13,7 @@ interface IHeaderData {
 
 export const Header = ({ scrollButtons }: IHeaderData) => {
   return (
-    <div className={cls.area}>
+    <header className={cls.area}>
       <div className={classNames(cls.header, {}, [])}>
         <div className={classNames(cls.nav, {}, [])}>
           <div className={classNames(cls.flex, {}, [])}>
@@ -57,7 +57,7 @@ export const Header = ({ scrollButtons }: IHeaderData) => {
       <div className={classNames(cls.line, {}, [])}>
         <div className={classNames(cls.circl, {}, [])}></div>
       </div>
-    </div>
+    </header>
   );
 };
 
