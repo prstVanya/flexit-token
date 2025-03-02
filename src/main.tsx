@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './components/App.tsx'
 
-const basename = "/flexit-token";
+const basename = "/";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
