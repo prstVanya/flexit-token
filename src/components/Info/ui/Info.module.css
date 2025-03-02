@@ -62,7 +62,7 @@
 }
 
 .blum {
-  background-image: url('../../../assets/images/icons/bloom.svg');
+  background-image: url('../../../assets/images/icons/Ton.svg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +70,8 @@
   height: 50px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  color: none;
+  text-decoration: none;
 }
 
 .blum:hover {

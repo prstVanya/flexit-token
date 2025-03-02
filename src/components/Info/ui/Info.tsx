@@ -24,7 +24,7 @@ export const Info = forwardRef<HTMLDivElement, IInfoData>(({ className }, ref) =
         </div>
         <div className={classNames(cls.links, {}, [])}>
           <p className={classNames(cls.te, {}, [])}>Available on</p>
-          <div className={classNames(cls.blum, {}, [])}></div>
+          <a className={classNames(cls.blum, {}, [])}></a>
         </div>
       </div>
     </div>
